@@ -1,6 +1,7 @@
-import { defineNuxtConfig } from 'nuxt';
+import { defineNuxtConfig } from 'nuxt/config';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// @ts-ignore
 export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
     tailwindcss: {
@@ -8,7 +9,7 @@ export default defineNuxtConfig({
         configPath: 'tailwind.config.js',
         exposeConfig: false,
         config: {},
-        injecPosition: 0,
+        injectPosition: 0,
         viewer: true
     },
     colorMode: {
