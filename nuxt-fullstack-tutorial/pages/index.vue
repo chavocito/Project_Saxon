@@ -28,7 +28,6 @@
     }
   }
   
-  import CharacterCard from './components/CharacterCard.vue';
   const query = gql`
     query getCharacters {
       characters {
